@@ -1,0 +1,38 @@
+{
+  "name": "@mhaddon/simpleajax",
+  "version": "1.0.0",
+  "description": "A simple AJAX class that creates an AJAX request and has jquery-like methods for handling the response.",
+  "main": "lib/Ajax.min.js",
+  "scripts": {
+    "build": "babel -s inline -d lib src",
+    "build-min": "minify lib/Ajax.js > lib/Ajax.min.js",
+    "publish": "npm run-script build && npm run-script build-min",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhaddon/SimpleAJAX.git"
+  },
+  "author": "Michael Haddon",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/mhaddon/SimpleAJAX/issues"
+  },
+  "homepage": "https://github.com/mhaddon/SimpleAJAX#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.3.2",
+    "babel-minify": "^0.3.0",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-private-underscore": "^0.1.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-plugin-typecheck": "^3.9.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-runtime": "^6.23.0"
+  }
+}
